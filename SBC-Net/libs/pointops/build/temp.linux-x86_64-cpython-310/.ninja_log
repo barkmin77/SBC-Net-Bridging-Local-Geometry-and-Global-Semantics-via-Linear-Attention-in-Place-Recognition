@@ -1,0 +1,18 @@
+# ninja log v5
+3	12185	1754224935123421887	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/sampling/sampling_cuda.o	26634744cd014e3a
+1	12480	1754224935419420086	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o	53c2e167ca9653ee
+0	12666	1754224935603418967	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o	5845f83203b7f315
+2	12756	1754224935695418407	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/knnquery/knnquery_cuda.o	b769e86299b8f43
+1	12920	1754224935859417411	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/featuredistribute/featuredistribute_cuda.o	2847e4f2cc0bee14
+1	12968	1754224935907417118	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o	38d7187f3fd258d8
+2	13190	1754224936131415754	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o	87efba9ee14a4154
+2	13258	1754224936199415342	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o	54d7f22ad098c946
+3	23497	1754224946415353084	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/pointops_api.o	59e16d0ad6a40554
+3	28372	1754224951303323228	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/sampling/sampling_cuda_kernel.o	21e4ca72bc702fe1
+3	28519	1754224951455322299	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda_kernel.o	2be2473db5a76abc
+1	28740	1754224951671320978	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda_kernel.o	6f37de4f805134ef
+0	28957	1754224951887319658	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda_kernel.o	befdbba2d2010fe2
+2	28993	1754224951927319414	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/knnquery/knnquery_cuda_kernel.o	bb89fcc22df44156
+2	29021	1754224951955319241	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda_kernel.o	74d28c9f84f8ce91
+2	29724	1754224952659314938	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda_kernel.o	c75e3fb7a66e97fe
+1	31029	1754224953959306986	/home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/featuredistribute/featuredistribute_cuda_kernel.o	e78fbdd8ac3399e0

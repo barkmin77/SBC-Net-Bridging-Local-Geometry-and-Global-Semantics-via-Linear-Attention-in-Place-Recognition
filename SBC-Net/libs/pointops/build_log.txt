@@ -1,0 +1,84 @@
+running build_ext
+W0803 21:34:43.412000 12515 torch/utils/cpp_extension.py:516] There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.8
+building 'pointops_cuda' extension
+[1/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/labelstat/labelstat_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/labelstat/labelstat_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/labelstat/labelstat_cuda.cpp:3:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    3 | #include <THC/THC.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+[2/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/ballquery/ballquery_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/ballquery/ballquery_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/ballquery/ballquery_cuda.cpp:4:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    4 | #include <THC/THC.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+[3/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/interpolation/interpolation_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/interpolation/interpolation_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/interpolation/interpolation_cuda.cpp:4:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    4 | #include <THC/THC.h>  // 필요 여부에 따라 제거 가능
+      |          ^~~~~~~~~~~
+compilation terminated.
+[4/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping/grouping_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping/grouping_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/grouping/grouping_cuda.cpp:4:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    4 | #include <THC/THC.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+[5/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping_int/grouping_int_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping_int/grouping_int_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/grouping_int/grouping_int_cuda.cpp:4:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    4 | #include <THC/THC.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+Traceback (most recent call last):
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2595, in _run_ninja_build
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parkminsei/PTC-Net/libs/pointops/setup.py", line 4, in <module>
+    setup(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+    return run_commands(dist)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+    dist.run_commands()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+    self.run_command(cmd)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+    super().run_command(command)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+    cmd_obj.run()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 96, in run
+    _build_ext.run(self)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 368, in run
+    self.build_extensions()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1071, in build_extensions
+    build_ext.build_extensions(self)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 484, in build_extensions
+    self._build_extensions_serial()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 510, in _build_extensions_serial
+    self.build_extension(ext)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 261, in build_extension
+    _build_ext.build_extension(self, ext)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 565, in build_extension
+    objects = self.compiler.compile(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 855, in unix_wrap_ninja_compile
+    _write_ninja_file_and_compile_objects(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2226, in _write_ninja_file_and_compile_objects
+    _run_ninja_build(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2612, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error compiling objects for extension

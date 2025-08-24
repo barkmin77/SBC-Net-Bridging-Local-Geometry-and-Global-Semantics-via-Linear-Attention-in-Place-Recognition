@@ -1,0 +1,1346 @@
+running build_ext
+W0803 21:36:46.123000 13254 torch/utils/cpp_extension.py:516] There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.8
+building 'pointops_cuda' extension
+[1/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/labelstat/labelstat_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/labelstat/labelstat_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/labelstat/labelstat_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/labelstat/labelstat_cuda.cpp:3:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    3 | #include <THC/THC.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+[2/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/interpolation/interpolation_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/interpolation/interpolation_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/interpolation/interpolation_cuda.cpp:4:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    4 | #include <THC/THC.h>  // 필요 여부에 따라 제거 가능
+      |          ^~~~~~~~~~~
+compilation terminated.
+[3/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping/grouping_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping/grouping_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/grouping/grouping_cuda.cpp:4:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    4 | #include <THC/THC.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+[4/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/ballquery/ballquery_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/ballquery/ballquery_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ballquery/ballquery_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+/home/parkminsei/PTC-Net/libs/pointops/src/ballquery/ballquery_cuda.cpp:4:10: fatal error: THC/THC.h: 그런 파일이나 디렉터리가 없습니다
+    4 | #include <THC/THC.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+[5/5] c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping_int/grouping_int_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+FAILED: /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o 
+c++ -MMD -MF /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o.d -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include -I/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/usr/local/cuda-12.8/include -I/home/parkminsei/venv-cu128/include -I/usr/include/python3.10 -c -c /home/parkminsei/PTC-Net/libs/pointops/src/grouping_int/grouping_int_cuda.cpp -o /home/parkminsei/PTC-Net/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping_int/grouping_int_cuda.o -g -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1018"' -DTORCH_EXTENSION_NAME=pointops_cuda -std=c++17
+In file included from /home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/ATen/cuda/CUDAContextLight.h:8,
+                 from /home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/include/ATen/cuda/CUDAContext.h:3,
+                 from /home/parkminsei/PTC-Net/libs/pointops/src/grouping_int/grouping_int_cuda.cpp:3:
+/usr/local/cuda-12.8/include/cusparse.h:434:46: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  434 | cusparseCreateCsric02Info(csric02Info_t* info);
+      |                                              ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:438:46: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  438 | cusparseDestroyCsric02Info(csric02Info_t info);
+      |                                              ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:442:46: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  442 | cusparseCreateBsric02Info(bsric02Info_t* info);
+      |                                              ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:446:46: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  446 | cusparseDestroyBsric02Info(bsric02Info_t info);
+      |                                              ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:450:48: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  450 | cusparseCreateCsrilu02Info(csrilu02Info_t* info);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:454:48: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  454 | cusparseDestroyCsrilu02Info(csrilu02Info_t info);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:458:48: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  458 | cusparseCreateBsrilu02Info(bsrilu02Info_t* info);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:462:48: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  462 | cusparseDestroyBsrilu02Info(bsrilu02Info_t info);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:466:44: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  466 | cusparseCreateBsrsv2Info(bsrsv2Info_t* info);
+      |                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:470:44: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  470 | cusparseDestroyBsrsv2Info(bsrsv2Info_t info);
+      |                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:474:44: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  474 | cusparseCreateBsrsm2Info(bsrsm2Info_t* info);
+      |                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:478:44: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  478 | cusparseDestroyBsrsm2Info(bsrsm2Info_t info);
+      |                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:482:48: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  482 | cusparseCreateCsru2csrInfo(csru2csrInfo_t* info);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:486:48: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  486 | cusparseDestroyCsru2csrInfo(csru2csrInfo_t info);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:490:50: warning: ‘cusparseColorInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  490 | cusparseCreateColorInfo(cusparseColorInfo_t* info);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:250:27: note: declared here
+  250 | struct cusparseColorInfo* cusparseColorInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                           ^~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:494:50: warning: ‘cusparseColorInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  494 | cusparseDestroyColorInfo(cusparseColorInfo_t info);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:250:27: note: declared here
+  250 | struct cusparseColorInfo* cusparseColorInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                           ^~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:498:42: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  498 | cusparseCreatePruneInfo(pruneInfo_t* info);
+      |                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:502:42: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  502 | cusparseDestroyPruneInfo(pruneInfo_t info);
+      |                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:768:52: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  768 |                           int*             position);
+      |                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:783:71: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  783 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:798:71: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  798 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:813:71: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  813 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:828:71: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  828 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:843:67: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  843 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:858:67: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  858 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:873:67: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  873 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:888:67: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  888 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:904:58: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  904 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:904:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  904 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:920:58: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  920 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:920:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  920 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:936:58: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  936 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:936:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  936 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:952:58: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  952 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:952:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  952 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:971:55: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  971 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:971:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  971 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:990:55: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  990 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:990:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+  990 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1009:55: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1009 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1009:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1009 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1028:55: warning: ‘bsrsv2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1028 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:222:20: note: declared here
+  222 | struct bsrsv2Info* bsrsv2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1028:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1028 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1126:52: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1126 |                           int*             position);
+      |                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1143:71: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1143 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1160:71: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1160 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1177:71: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1177 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1194:71: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1194 |                            int*                     pBufferSizeInBytes);
+      |                                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1211:67: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1211 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1228:67: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1228 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1245:67: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1245 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1262:67: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1262 |                               size_t*                  pBufferSize);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1280:58: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1280 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1280:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1280 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1298:58: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1298 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1298:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1298 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1316:58: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1316 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1316:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1316 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1334:58: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1334 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1334:58: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1334 |                          void*                    pBuffer);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1357:55: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1357 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1357:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1357 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1380:55: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1380 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1380:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1380 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1403:55: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1403 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1403:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1403 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1426:55: warning: ‘bsrsm2Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1426 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:226:20: note: declared here
+  226 | struct bsrsm2Info* bsrsm2Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                    ^~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1426:55: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1426 |                       void*                    pBuffer);
+      |                                                       ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1438:58: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1438 |                                float*           boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1446:58: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1446 |                                double*          boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1454:58: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1454 |                                cuComplex*       boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1462:58: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1462 |                                cuDoubleComplex* boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1468:54: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1468 |                             int*             position);
+      |                                                      ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1480:73: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1480 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1492:73: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1492 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1504:73: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1504 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1516:73: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1516 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1528:69: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1528 |                                 size_t*                  pBufferSize);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1540:69: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1540 |                                 size_t*                  pBufferSize);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1552:69: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1552 |                                 size_t*                  pBufferSize);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1564:69: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1564 |                                 size_t*                  pBufferSize);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1577:60: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1577 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1577:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1577 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1590:60: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1590 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1590:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1590 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1603:60: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1603 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1603:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1603 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1616:60: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1616 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1616:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1616 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1629:48: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1629 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1629:48: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1629 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1642:48: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1642 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1642:48: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1642 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1655:48: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1655 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1655:48: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1655 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1668:48: warning: ‘csrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1668 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:238:22: note: declared here
+  238 | struct csrilu02Info* csrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1668:48: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1668 |                   void*                 pBuffer);
+      |                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1676:58: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1676 |                                float*           boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1684:58: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1684 |                                double*          boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1692:58: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1692 |                                cuComplex*       boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1700:58: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1700 |                                cuDoubleComplex* boost_val);
+      |                                                          ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1706:54: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1706 |                             int*             position);
+      |                                                      ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1720:73: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1720 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1734:73: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1734 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1748:73: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1748 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1762:73: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1762 |                              int*                     pBufferSizeInBytes);
+      |                                                                         ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1776:69: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1776 |                                 size_t*                  pBufferSize);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1790:69: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1790 |                                 size_t*                  pBufferSize);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1804:69: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1804 |                                 size_t*                  pBufferSize);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1818:68: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1818 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1833:60: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1833 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1833:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1833 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1848:60: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1848 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1848:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1848 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1863:60: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1863 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1863:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1863 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1878:60: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1878 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1878:60: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1878 |                            void*                    pBuffer);
+      |                                                            ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1893:51: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1893 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1893:51: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1893 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1908:51: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1908 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1908:51: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1908 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1923:51: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1923 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1923:51: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1923 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1938:51: warning: ‘bsrilu02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1938 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:242:22: note: declared here
+  242 | struct bsrilu02Info* bsrilu02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1938:51: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1938 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1944:53: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1944 |                            int*             position);
+      |                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1956:72: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1956 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1968:72: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1968 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1980:72: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1980 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:1992:72: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 1992 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2004:68: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2004 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2016:68: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2016 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2028:68: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2028 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2040:68: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2040 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2053:59: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2053 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2053:59: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2053 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2066:59: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2066 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2066:59: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2066 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2079:59: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2079 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2079:59: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2079 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2092:59: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2092 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2092:59: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2092 |                           void*                    pBuffer);
+      |                                                           ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2105:50: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2105 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2105:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2105 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2118:50: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2118 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2118:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2118 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2131:50: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2131 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2131:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2131 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2144:50: warning: ‘csric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2144 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:230:21: note: declared here
+  230 | struct csric02Info* csric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2144:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2144 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2150:53: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2150 |                            int*             position);
+      |                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2164:72: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2164 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2178:72: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2178 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2192:72: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2192 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2206:72: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2206 |                             int*                     pBufferSizeInBytes);
+      |                                                                        ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2220:68: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2220 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2234:68: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2234 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2248:68: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2248 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2262:68: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2262 |                                size_t*                  pBufferSize);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2277:64: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2277 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2277:64: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2277 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2292:64: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2292 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2292:64: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2292 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2307:64: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2307 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2307:64: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2307 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2322:64: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2322 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2322:64: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2322 |                           void*                    pInputBuffer);
+      |                                                                ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2337:50: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2337 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2337:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2337 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2352:50: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2352 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2352:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2352 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2368:50: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2368 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2368:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2368 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2383:50: warning: ‘bsric02Info_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2383 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:234:21: note: declared here
+  234 | struct bsric02Info* bsric02Info_t CUSPARSE_DEPRECATED_TYPE;
+      |                     ^~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:2383:50: warning: ‘cusparseSolvePolicy_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 2383 |                  void*                    pBuffer);
+      |                                                  ^
+/usr/local/cuda-12.8/include/cusparse.h:321:3: note: declared here
+  321 | } cusparseSolvePolicy_t CUSPARSE_DEPRECATED_TYPE;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:3055:49: warning: ‘cusparseColorInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 3055 |                   const cusparseColorInfo_t info);
+      |                                                 ^
+/usr/local/cuda-12.8/include/cusparse.h:250:27: note: declared here
+  250 | struct cusparseColorInfo* cusparseColorInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                           ^~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:3070:49: warning: ‘cusparseColorInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 3070 |                   const cusparseColorInfo_t info);
+      |                                                 ^
+/usr/local/cuda-12.8/include/cusparse.h:250:27: note: declared here
+  250 | struct cusparseColorInfo* cusparseColorInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                           ^~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:3085:49: warning: ‘cusparseColorInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 3085 |                   const cusparseColorInfo_t info);
+      |                                                 ^
+/usr/local/cuda-12.8/include/cusparse.h:250:27: note: declared here
+  250 | struct cusparseColorInfo* cusparseColorInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                           ^~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:3100:49: warning: ‘cusparseColorInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 3100 |                   const cusparseColorInfo_t info);
+      |                                                 ^
+/usr/local/cuda-12.8/include/cusparse.h:250:27: note: declared here
+  250 | struct cusparseColorInfo* cusparseColorInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                           ^~~~~~~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4182:68: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4182 |                                 size_t*          pBufferSizeInBytes);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4194:68: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4194 |                                 size_t*          pBufferSizeInBytes);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4206:68: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4206 |                                 size_t*          pBufferSizeInBytes);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4218:68: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4218 |                                 size_t*          pBufferSizeInBytes);
+      |                                                                    ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4231:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4231 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4244:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4244 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4257:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4257 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4270:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4270 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4283:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4283 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4296:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4296 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4309:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4309 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4322:51: warning: ‘csru2csrInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4322 |                   void*                    pBuffer);
+      |                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:246:22: note: declared here
+  246 | struct csru2csrInfo* csru2csrInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                      ^~~~~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4631:79: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4631 |                                    size_t*                  pBufferSizeInBytes);
+      |                                                                               ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4649:79: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4649 |                                    size_t*                  pBufferSizeInBytes);
+      |                                                                               ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4665:79: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4665 |                                    size_t*                  pBufferSizeInBytes);
+      |                                                                               ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4682:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4682 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4698:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4698 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4713:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4713 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4730:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4730 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4747:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4747 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4762:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4762 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4783:79: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4783 |                                    size_t*                  pBufferSizeInBytes);
+      |                                                                               ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4804:79: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4804 |                                    size_t*                  pBufferSizeInBytes);
+      |                                                                               ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4823:79: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4823 |                                    size_t*                  pBufferSizeInBytes);
+      |                                                                               ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4843:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4843 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4863:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4863 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4881:69: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4881 |                                     void*                    pBuffer);
+      |                                                                     ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4901:67: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4901 |                                   void*                    pBuffer);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4921:67: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4921 |                                   void*                    pBuffer);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/usr/local/cuda-12.8/include/cusparse.h:4939:67: warning: ‘pruneInfo_t’ is deprecated: The type will be removed in the next major release [-Wdeprecated-declarations]
+ 4939 |                                   void*                    pBuffer);
+      |                                                                   ^
+/usr/local/cuda-12.8/include/cusparse.h:254:19: note: declared here
+  254 | struct pruneInfo* pruneInfo_t CUSPARSE_DEPRECATED_TYPE;
+      |                   ^~~~~~~~~~~
+/home/parkminsei/PTC-Net/libs/pointops/src/grouping_int/grouping_int_cuda.cpp:8:8: error: ‘THCState’ does not name a type
+    8 | extern THCState *state;
+      |        ^~~~~~~~
+ninja: build stopped: subcommand failed.
+Traceback (most recent call last):
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2595, in _run_ninja_build
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parkminsei/PTC-Net/libs/pointops/setup.py", line 4, in <module>
+    setup(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+    return run_commands(dist)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+    dist.run_commands()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+    self.run_command(cmd)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/dist.py", line 1102, in run_command
+    super().run_command(command)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+    cmd_obj.run()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 96, in run
+    _build_ext.run(self)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 368, in run
+    self.build_extensions()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1071, in build_extensions
+    build_ext.build_extensions(self)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 484, in build_extensions
+    self._build_extensions_serial()
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 510, in _build_extensions_serial
+    self.build_extension(ext)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 261, in build_extension
+    _build_ext.build_extension(self, ext)
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 565, in build_extension
+    objects = self.compiler.compile(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 855, in unix_wrap_ninja_compile
+    _write_ninja_file_and_compile_objects(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2226, in _write_ninja_file_and_compile_objects
+    _run_ninja_build(
+  File "/home/parkminsei/venv-cu128/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2612, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error compiling objects for extension
