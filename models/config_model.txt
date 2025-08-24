@@ -1,0 +1,8 @@
+[MODEL]
+model=SBC_Net
+
+coordinates=cartesian
+quantization_step= 0.01
+
+
+
